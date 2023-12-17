@@ -1,4 +1,4 @@
-package cast
+package utilities
 
 import (
 	"fmt"

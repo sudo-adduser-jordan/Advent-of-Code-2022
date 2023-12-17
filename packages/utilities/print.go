@@ -1,8 +1,6 @@
-package utils
+package utilities
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // PrintMatrixGrid will print given 2D array/slice as a grid
 // Supported types are:

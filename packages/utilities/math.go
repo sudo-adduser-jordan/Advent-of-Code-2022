@@ -1,4 +1,4 @@
-package mathy
+package utilities
 
 // returns min value in list
 func MinInt(nums ...int) int {
