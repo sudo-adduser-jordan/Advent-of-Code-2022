@@ -230,21 +230,25 @@ func ExecuteSolutions(arguments Arguments) {
 			print(console.RESET_COLOR + ", part " + console.CYAN_TEXT)
 			var solver func(string)
 			if index == 0 {
-				solver = SOLUTIONS_A[day]
+				solver = SOLUTIONS_A[day-1]
 				print("A")
 			}
 			if index == 1 {
 				print("B")
-				solver = SOLUTIONS_B[day]
+				solver = SOLUTIONS_B[day-1]
 			}
 			print(console.RESET_COLOR)
 
 			var inputpaths []string
+			directory, err := os.Getwd()
+			if err != nil {
+				log.Fatal(err)
+			}
 			if arguments.sample {
-				inputpaths = append(inputpaths, SAMPLE_PATHS[day-1])
+				inputpaths = append(inputpaths, directory+"\\source\\samples\\"+SAMPLE_PATHS[day-1])
 			}
 			if arguments.input {
-				inputpaths = append(inputpaths, INPUT_PATHS[day-1])
+				inputpaths = append(inputpaths, directory+"\\source\\inputs\\"+INPUT_PATHS[day-1])
 			}
 
 			for _, path := range inputpaths {

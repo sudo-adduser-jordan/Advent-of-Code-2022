@@ -8,7 +8,7 @@ import (
 )
 
 const FILE_TOTAL = 25
-const PUZZLES = "\\source\\puzzles\\"
+const PUZZLES = "\\source\\problems\\"
 const SOLUTIONS = "\\source\\solutions\\"
 const INPUTS = "\\source\\inputs\\"
 const SAMPLES = "\\source\\samples\\"
@@ -18,9 +18,9 @@ const GO = ".go"
 
 func CodeGenerator() {
 	GenerateMarkdownFiles()
-	GenerateSolutions()
-	GenerateInputFiles()
-	GenerateSampleInputFiles()
+	// GenerateSolutions()
+	// GenerateInputFiles()
+	// GenerateSampleInputFiles()
 }
 
 func GenerateMarkdownFiles() {
@@ -38,7 +38,7 @@ func GenerateMarkdownFiles() {
 					log.Fatal(err)
 				}
 			}
-			stringBuilder += "Puzzle"
+			stringBuilder += "Problem"
 			if index < 10 {
 				stringBuilder += "0"
 			}

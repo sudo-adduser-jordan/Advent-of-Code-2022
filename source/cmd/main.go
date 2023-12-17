@@ -1,7 +1,7 @@
 package main
 
 func main() {
-	CodeGenerator()
-	println("Files created.")
+	// CodeGenerator()
+	// println("Files created.")
 	AdventOfCode()
 }
