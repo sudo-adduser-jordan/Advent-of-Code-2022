@@ -7,9 +7,9 @@ import (
 )
 
 func ScanFile(s string) (*bufio.Scanner, *os.File) {
-	file, error := os.Open(s)
-	if error != nil {
-		fmt.Println(error)
+	file, err := os.Open(s)
+	if err != nil {
+		fmt.Println(err)
 		os.Exit(1)
 	}
 	scanner := bufio.NewScanner(file)

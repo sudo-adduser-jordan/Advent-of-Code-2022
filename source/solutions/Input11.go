@@ -1,4 +1,4 @@
-package main
+package solutions
 
 type Monkey struct {
 	items     []int
@@ -7,7 +7,7 @@ type Monkey struct {
 	divisor   int
 }
 
-func Input() []Monkey {
+func MonkeyInput() []Monkey {
 	return []Monkey{
 		{ // 0
 			items: []int{98, 70, 75, 80, 84, 89, 55, 98},
@@ -116,7 +116,7 @@ func Input() []Monkey {
 	}
 
 }
-func InputExample() []Monkey {
+func MonkeyInputExample() []Monkey {
 	return []Monkey{
 		{ // 0
 			items: []int{79, 98},
