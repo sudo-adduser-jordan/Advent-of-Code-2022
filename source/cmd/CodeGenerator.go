@@ -8,10 +8,10 @@ import (
 )
 
 const FILE_TOTAL = 25
-const PUZZLES = "\\source\\problems\\"
-const SOLUTIONS = "\\source\\solutions\\"
-const INPUTS = "\\source\\inputs\\"
-const SAMPLES = "\\source\\samples\\"
+const PUZZLES = "/source/problems/"
+const SOLUTIONS = "/source/solutions/"
+const INPUTS = "/source/inputs/"
+const SAMPLES = "/source/samples/"
 const MARKDOWN = ".md"
 const INPUT = ".input"
 const GO = ".go"
