@@ -1,8 +1,0 @@
-
-.\cmd.exe --solution01
-
-go run .\source\cmd\ --solution01 --solution15 --solution22
-
-go run .\source\cmd\ --solution01 --parta --sample
-
-go run .\source\cmd\ --solution01 --parta --input

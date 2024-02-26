@@ -244,11 +244,12 @@ func ExecuteSolutions(arguments Arguments) {
 			if err != nil {
 				log.Fatal(err)
 			}
+
 			if arguments.sample {
-				inputpaths = append(inputpaths, directory+"\\source\\samples\\"+SAMPLE_PATHS[day-1])
+				inputpaths = append(inputpaths, directory+"/source/samples/"+SAMPLE_PATHS[day-1])
 			}
 			if arguments.input {
-				inputpaths = append(inputpaths, directory+"\\source\\inputs\\"+INPUT_PATHS[day-1])
+				inputpaths = append(inputpaths, directory+"/source/inputs/"+INPUT_PATHS[day-1])
 			}
 
 			for _, path := range inputpaths {
